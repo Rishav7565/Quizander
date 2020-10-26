@@ -20,10 +20,10 @@ int main()
 	printf("\t\t\t\t\t\t\t||                                      ||\n");
 	printf("\t\t\t\t\t\t\t******************************************\n\n\n");
 	printf("\t\t\t\t\t\t\tSelect the mode in which you want to play:-\n\n\n ");
-	printf("\t\t\t\t\t\t\t\t\t\t\t1.Press S for playing Single player mode.\n\n");
-	printf("\t\t\t\t\t\t\t\t\t\t\t2.Press M for playing Multi player mode.\n\n");
-	printf("\t\t\t\t\t\t\t\t\t\t\t3.Press H for help mode.\n\n");
-	printf("\t\t\t\t\t\t\t\t\t\t\tEnter Your Choice. ");
+	printf("\t\t\t\t\t\t\t\t\t1.Press S for playing Single player mode.\n\n");
+	printf("\t\t\t\t\t\t\t\t\t2.Press M for playing Multi player mode.\n\n");
+	printf("\t\t\t\t\t\t\t\t\t3.Press H for help mode.\n\n");
+	printf("\t\t\t\t\t\t\t\t\tEnter Your Choice. ");
 	scanf("%s",&c);
 	if(c=='S' || c=='s')
 	{
@@ -55,7 +55,8 @@ int sp()
 	printf("Choose the option from the down below\n\n");
 	printf("\t\t\t1.Choose Category\n\n");
 	printf("\t\t\t2.Highest Score\n\n");
-	printf("\t\t\t3.Back To Main Menu\n\n");
+	printf("\t\t\t3.Back To Main Menu\n\n\t");
+	printf("Enter your choice:- ");
 	scanf("%c",&cho);
 	if(cho=='1')
 	{
@@ -76,7 +77,16 @@ int sp()
 	}
 int cho_cate()
 {
-	printf("kill");
+	int i;
+	for(i=0;i<=3;i++)
+	{
+		printf("\n");
+	}
+	printf("\n\n\t\t\t\tPress 1 For Playing 10 second observer challenge.");
+	printf("\n\n\t\t\t\tPress 2 For Playing Polling Round Fire.");
+	printf("\n\n\t\t\t\tPress 3 For Playing Match the Following.");
+	printf("\n\n\t\t\t\tPress 4 For Playing Getting the ways out.");
+	printf("\n\n\t\t\t\tPress 5 For Playing Ultimate fusion.");
 }
 int high_scr()
 {
